@@ -31,16 +31,6 @@ h2 {
 }
 h3 { margin-bottom: 5px; }
 .subtitle { color: #666; }
-.language { text-align: right; }
-button {
-  padding: 8px 15px;
-  margin-left: 5px;
-  background: white;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  cursor: pointer;
-}
-button:hover { background: #eee; }
 .paper {
   padding: 15px 0;
   border-bottom: 1px solid #ddd;
@@ -63,11 +53,6 @@ footer {
 
 <body>
 
-<div class="language">
-  <button onclick="setLanguage('en')">English</button>
-  <button onclick="setLanguage('ja')">日本語</button>
-</div>
-
 <header>
   <h1>Technical Reviews of Scattered-Field Transformations</h1>
   <p class="subtitle">
@@ -76,45 +61,30 @@ footer {
 </header>
 
 <section>
-  <h2 class="ja">このサイトについて</h2>
-  <h2 class="en">About</h2>
+  <h2>About</h2>
 
-  <p class="ja">
-    本サイトでは、電磁界散乱、レーダ断面積（RCS）、
-    近傍界・遠方界変換などに関する技術解説、
-    論文レビューおよび研究ノートを公開しています。
-  </p>
-
-  <p class="en">
-    To date, no comprehensive review of scattered-field transformation techniques, including near-field to far-field transformations, for 
-    radar cross-section (RCS) measurements has been published. 
+  <p>
+    To date, no comprehensive review of scattered-field transformation techniques, including near-field to far-field transformations, for
+    radar cross-section (RCS) measurements has been published.
     Therefore, I will provide a series of reviews on this topic on this website.
   </p>
 </section>
 
 <section>
-  <h2 class="ja">技術解説・論文レビュー</h2>
-  <h2 class="en">Reviews</h2>
+  <h2>Reviews</h2>
 
   <div class="paper">
     <h3>
       Review 001: Introduction
     </h3>
 
-    <p class="ja">
-      1.1 Definition of RCS and Far-field criteria, 1.2 Measurement and Analysis of RCS, and Scattered-Field Transformation
-    </p>
-
-    <p class="en">
+    <p>
       1.1 Definition of RCS, Far-field Criteria <br>
       1.2 Measurement and Analysis of RCS, Scattered-Field Transformation <br>
       1.3 Calivration of RCS Mesurements <br>
     </p>
 
     <div class="pdf-links">
-      <a href="papers/日本gp.pdf">
-        日本語 PDF
-      </a>
       <a href="papers/Test.pdf">
         English PDF
       </a>
@@ -123,8 +93,7 @@ footer {
 </section>
 
 <section>
-  <h2 class="ja">研究分野</h2>
-  <h2 class="en">Research Areas</h2>
+  <h2>Research Areas</h2>
 
   <ul>
     <li>Electromagnetic Scattering</li>
@@ -136,8 +105,7 @@ footer {
 </section>
 
 <section>
-  <h2 class="ja">研究者プロフィール</h2>
-  <h2 class="en">Research Profiles</h2>
+  <h2>Research Profiles</h2>
 
   <p>
     <a href="https://orcid.org/">
@@ -151,12 +119,7 @@ footer {
 </section>
 
 <footer>
-  <p class="ja">
-    本サイトの内容は個人的な学術的見解であり、
-    所属機関の公式見解を示すものではありません。
-  </p>
-
-  <p class="en">
+  <p>
     The views expressed on this website are
     personal academic opinions and do not
     represent those of any affiliated institution.
@@ -164,22 +127,6 @@ footer {
 
   <p>© 2026 AKAMINE Scattering</p>
 </footer>
-
-<script>
-function setLanguage(lang) {
-  document.querySelectorAll(".ja").forEach(el => {
-    el.style.display = lang === "ja" ? "" : "none";
-  });
-
-  document.querySelectorAll(".en").forEach(el => {
-    el.style.display = lang === "en" ? "" : "none";
-  });
-
-  document.documentElement.lang = lang;
-}
-
-setLanguage("en");
-</script>
 
 </body>
 </html>
