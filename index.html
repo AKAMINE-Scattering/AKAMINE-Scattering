@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AKAMINE Scattering | Research Notes</title>
+
+<style>
+body {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 35px 25px;
+  color: #222;
+  line-height: 1.8;
+  background: #fff;
+}
+header {
+  border-bottom: 2px solid #173b60;
+  padding-bottom: 20px;
+}
+h1 {
+  color: #173b60;
+  font-size: 30px;
+}
+h2 {
+  color: #173b60;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+  margin-top: 40px;
+}
+h3 { margin-bottom: 5px; }
+.subtitle { color: #666; }
+.language { text-align: right; }
+button {
+  padding: 8px 15px;
+  margin-left: 5px;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background: #eee; }
+.paper {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+a {
+  color: #1769aa;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+.pdf-links a { margin-right: 20px; }
+footer {
+  margin-top: 60px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  color: #777;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="language">
+  <button onclick="setLanguage('ja')">日本語</button>
+  <button onclick="setLanguage('en')">English</button>
+</div>
+
+<header>
+  <h1>AKAMINE Scattering</h1>
+  <p class="subtitle">
+    Research Notes & Technical Reviews
+  </p>
+  <p>
+    Electromagnetic Scattering |
+    Radar Cross Section |
+    Near-Field Measurements
+  </p>
+</header>
+
+<section>
+  <h2 class="ja">このサイトについて</h2>
+  <h2 class="en">About</h2>
+
+  <p class="ja">
+    本サイトでは、電磁界散乱、レーダ断面積（RCS）、
+    近傍界・遠方界変換などに関する技術解説、
+    論文レビューおよび研究ノートを公開しています。
+  </p>
+
+  <p class="en">
+    This website provides technical reviews,
+    theoretical explanations, and research notes
+    on electromagnetic scattering, radar cross
+    section (RCS), and near-field to far-field
+    transformation techniques.
+  </p>
+</section>
+
+<section>
+  <h2 class="ja">技術解説・論文レビュー</h2>
+  <h2 class="en">Technical Reviews</h2>
+
+  <div class="paper">
+    <h3>
+      Review 001:
+      Near-Field to Far-Field Transformation
+    </h3>
+
+    <p class="ja">
+      近傍界・遠方界変換の理論、数式の導出、
+      既存手法との比較および適用限界について解説します。
+    </p>
+
+    <p class="en">
+      Theoretical background, mathematical
+      derivations, comparison with existing
+      methods, and technical limitations.
+    </p>
+
+    <div class="pdf-links">
+      <a href="papers/review001_ja.pdf">
+        日本語 PDF
+      </a>
+      <a href="papers/review001_en.pdf">
+        English PDF
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="ja">研究分野</h2>
+  <h2 class="en">Research Areas</h2>
+
+  <ul>
+    <li>Electromagnetic Scattering</li>
+    <li>Radar Cross Section (RCS)</li>
+    <li>Near-Field to Far-Field Transformation</li>
+    <li>Bistatic Radar Measurements</li>
+    <li>Antenna Measurements</li>
+  </ul>
+</section>
+
+<section>
+  <h2 class="ja">研究者プロフィール</h2>
+  <h2 class="en">Research Profiles</h2>
+
+  <p>
+    <a href="https://orcid.org/">
+      ORCID
+    </a>
+    |
+    <a href="https://www.linkedin.com/">
+      LinkedIn
+    </a>
+  </p>
+</section>
+
+<footer>
+  <p class="ja">
+    本サイトの内容は個人的な学術的見解であり、
+    所属機関の公式見解を示すものではありません。
+  </p>
+
+  <p class="en">
+    The views expressed on this website are
+    personal academic opinions and do not
+    represent those of any affiliated institution.
+  </p>
+
+  <p>© 2026 AKAMINE Scattering</p>
+</footer>
+
+<script>
+function setLanguage(lang) {
+  document.querySelectorAll(".ja").forEach(el => {
+    el.style.display = lang === "ja" ? "" : "none";
+  });
+
+  document.querySelectorAll(".en").forEach(el => {
+    el.style.display = lang === "en" ? "" : "none";
+  });
+
+  document.documentElement.lang = lang;
+}
+
+setLanguage("en");
+</script>
+
+</body>
+</html>
